@@ -10,11 +10,12 @@ const greeting = () => (<p>Good morning!</p>);
 
 const getResult = (a, b) => a + b;
 
-export const FirstApp = ({title, subTitle}) => {
+export const FirstApp = ({title, subTitle, name}) => {
   return (
     <>
       <h1>{title}</h1>
       <h3>{subTitle}</h3>
+      <p>{name}</p>
 
       <code>{JSON.stringify(newMessage)}</code>
 
@@ -32,7 +33,13 @@ export const FirstApp = ({title, subTitle}) => {
   // );
 }
 
+FirstApp.defaultProps = {
+  title: 'Not title',
+  subTitle: 0,
+  name: 'Juan',
+}
+
 FirstApp.propTypes = {
   title: PropTypes.string.isRequired,
-  subTitle: PropTypes.number
+  subTitle: PropTypes.number,
 }
