@@ -9,12 +9,12 @@ const greeting = () => (<p>Good morning!</p>);
 
 const getResult = (a, b) => a + b;
 
-export const FirstApp = () => {
+export const FirstApp = ({title, subtitle}) => {
   return (
     <>
-      <h1>First App</h1>
-      <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quas voluptatem. Consequuntur neque quos hic quod officiis numquam doloribus facilis sapiente quis nemo sit reprehenderit fuga, minima alias quibusdam natus.</h3>
-
+      <h1>{title}</h1>
+      <h3>{subtitle}</h3>
+      
       <code>{JSON.stringify(newMessage)}</code>
 
       { greeting() }
