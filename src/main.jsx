@@ -9,7 +9,7 @@ import './styles.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/*<FirstApp title='Hello, I am David' subTitle={1234} /> */}
-    <CounterApp value={6} />
+    <FirstApp title='Hello, I am David' subTitle={1234} />
+    {/* <CounterApp value={6} /> */}
   </React.StrictMode>
 )
