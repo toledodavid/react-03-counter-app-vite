@@ -13,7 +13,7 @@ const getResult = (a, b) => a + b;
 export const FirstApp = ({title, subTitle, name}) => {
   return (
     <>
-      <h1>{title}</h1>
+      <h1 data-testid="test-title">{title}</h1>
       <h3>{subTitle}</h3>
       <p>{name}</p>
 
