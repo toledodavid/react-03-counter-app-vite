@@ -22,7 +22,7 @@ describe('Tests for <FirstApp />', () => {
   });
 
   test('should show a subtitle sent by props', () => {
-    const subTitle = 12;
+    const subTitle = 'I am subtitle';
     const {getByText} = render(<FirstApp subTitle={subTitle}/>);
 
     expect(getByText(subTitle)).toBeTruthy();
